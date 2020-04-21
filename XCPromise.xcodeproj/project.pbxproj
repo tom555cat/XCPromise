@@ -16,6 +16,12 @@
 		8EDF8F01244E996200955D31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF8F00244E996200955D31 /* main.m */; };
 		8EDF8F0B244E996200955D31 /* XCPromiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF8F0A244E996200955D31 /* XCPromiseTests.m */; };
 		8EDF8F16244E996200955D31 /* XCPromiseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF8F15244E996200955D31 /* XCPromiseUITests.m */; };
+		8EDF8F25244E998000955D31 /* XCPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF8F24244E998000955D31 /* XCPromise.m */; };
+		8EDF8F26244E998000955D31 /* XCPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF8F24244E998000955D31 /* XCPromise.m */; };
+		8EDF8F27244E998000955D31 /* XCPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF8F24244E998000955D31 /* XCPromise.m */; };
+		8EDF8F29244E9A0300955D31 /* MyPromise.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF8F28244E9A0300955D31 /* MyPromise.js */; };
+		8EDF8F2A244E9A0300955D31 /* MyPromise.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF8F28244E9A0300955D31 /* MyPromise.js */; };
+		8EDF8F2B244E9A0300955D31 /* MyPromise.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF8F28244E9A0300955D31 /* MyPromise.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,9 @@
 		8EDF8F11244E996200955D31 /* XCPromiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCPromiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDF8F15244E996200955D31 /* XCPromiseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPromiseUITests.m; sourceTree = "<group>"; };
 		8EDF8F17244E996200955D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDF8F23244E998000955D31 /* XCPromise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPromise.h; sourceTree = "<group>"; };
+		8EDF8F24244E998000955D31 /* XCPromise.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCPromise.m; sourceTree = "<group>"; };
+		8EDF8F28244E9A0300955D31 /* MyPromise.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MyPromise.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,7 @@
 		8EDF8EED244E995F00955D31 /* XCPromise */ = {
 			isa = PBXGroup;
 			children = (
+				8EDF8F28244E9A0300955D31 /* MyPromise.js */,
 				8EDF8EEE244E995F00955D31 /* AppDelegate.h */,
 				8EDF8EEF244E995F00955D31 /* AppDelegate.m */,
 				8EDF8EF1244E995F00955D31 /* SceneDelegate.h */,
@@ -115,6 +125,8 @@
 				8EDF8EFC244E996200955D31 /* LaunchScreen.storyboard */,
 				8EDF8EFF244E996200955D31 /* Info.plist */,
 				8EDF8F00244E996200955D31 /* main.m */,
+				8EDF8F23244E998000955D31 /* XCPromise.h */,
+				8EDF8F24244E998000955D31 /* XCPromise.m */,
 			);
 			path = XCPromise;
 			sourceTree = "<group>";
@@ -240,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDF8F29244E9A0300955D31 /* MyPromise.js in Resources */,
 				8EDF8EFE244E996200955D31 /* LaunchScreen.storyboard in Resources */,
 				8EDF8EFB244E996200955D31 /* Assets.xcassets in Resources */,
 				8EDF8EF9244E996000955D31 /* Main.storyboard in Resources */,
@@ -250,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDF8F2A244E9A0300955D31 /* MyPromise.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDF8F2B244E9A0300955D31 /* MyPromise.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +284,7 @@
 			files = (
 				8EDF8EF6244E996000955D31 /* ViewController.m in Sources */,
 				8EDF8EF0244E995F00955D31 /* AppDelegate.m in Sources */,
+				8EDF8F25244E998000955D31 /* XCPromise.m in Sources */,
 				8EDF8F01244E996200955D31 /* main.m in Sources */,
 				8EDF8EF3244E996000955D31 /* SceneDelegate.m in Sources */,
 			);
@@ -278,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDF8F26244E998000955D31 /* XCPromise.m in Sources */,
 				8EDF8F0B244E996200955D31 /* XCPromiseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDF8F27244E998000955D31 /* XCPromise.m in Sources */,
 				8EDF8F16244E996200955D31 /* XCPromiseUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
