@@ -48,6 +48,9 @@
     return promise;
 }
 
+/// 1> 如果value是promise，则递归then(resolve)，其中resolve是当前promise的resolve，使递归结束还会进来；
+/// 2> 如果value不是promise，处理handler。
+/// @param newValue task返回值
 - (void)resolve:(id)newValue {
     if (newValue && [newValue isKindOfClass:[XCPromise class]]) {
         OnResolved resolve = (id)^(id value) {
@@ -74,6 +77,7 @@
     [self handleAllHandler];
 }
 
+/// 处理当前promise所有的then传递的handler
 - (void)handleAllHandler {
     dispatch_async(self.promiseQueue, ^{
         for (Handler *handler in self.deferredArray) {
@@ -82,6 +86,10 @@
     });
 }
 
+/// 执行当前promise的某个handler
+/// 1> 当promise为pending状态，保存handler；
+/// 2> 当promise为resolved状态，直接执行then传递回调，再执行then返回的promise的resolve方法。
+/// @param handler then传递的回调相关类
 - (void)handle:(Handler *)handler {
     if ([self.state isEqualToString:@"pending"]) {
         dispatch_barrier_sync(self.promiseQueue, ^{
